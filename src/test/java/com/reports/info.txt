@@ -1,0 +1,2 @@
+This folder contains test reports.
+1.Simple HTML as well as XSLT reports/maven reports

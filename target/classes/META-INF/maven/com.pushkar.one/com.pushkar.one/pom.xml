@@ -5,4 +5,45 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>automationFrameWork-v1.0</name>
   <description>A simple but well organized intermediate to advance level workspace for curious fellas!</description>
+<dependencies>
+<!-- selenium webdriver dependency -->
+<dependency> 
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.0.0-beta4</version>
+    </dependency> 
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
+</dependency>
+
+    
+</dependencies>
+<build>
+<plugins>
+<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.5.1</version>
+          <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          </configuration>
+</plugin>
+<plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        </plugin>
+</plugins>
+</build>
+
 </project>
